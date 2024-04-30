@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Адаптивна веб-сторінка з додатковим форматуванням</title>
+    <style>
+        /* CSS для адаптивного дизайну */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .container {
+                width: 100%;
+            }
+        }
+
+        /* Додаткові стилі для форматування тексту */
+        q {
+            quotes: "«" "»";
+        }
+
+        blockquote {
+            margin: 0;
+            padding: 10px 20px;
+            background-color: #f4f4f4;
+            border-left: 4px solid #ccc;
+        }
+
+        abbr {
+            text-decoration: underline dotted;
+            cursor: help;
+        }
+
+        address {
+            font-style: italic;
+        }
+
+        cite {
+            font-style: italic;
+        }
+
+        bdo {
+            direction: rtl; /* Зміна напрямку тексту на праворуч */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Ласкаво просимо на нашу веб-сторінку!</h1>
+        <p>Ось кілька прикладів використання додаткових тегів форматування тексту:</p>
+        
+        <blockquote>
+            <p><q>Життя — це те, що відбувається, поки ви зайняті планами на майбутнє.</q> - Джон Леннон</p>
+        </blockquote>
+
+        <p><abbr title="Інформаційні технології">IT</abbr> компанія знаходиться в центрі міста.</p>
+
+        <address>Автор: <a href="mailto:author@example.com">Ім'я Автора</a></address>
+
+        <p><cite>Цитата з книги "Ромео і Джульєтта"</cite></p>
+
+        <p>Написано справа наліво: <bdo>Привіт, світ!</bdo></p>
+    </div>
+</body>
+</html>
